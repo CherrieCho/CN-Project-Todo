@@ -1,0 +1,42 @@
+body{
+  margin: 0;
+  background-image: url(./background/simple-theme.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container{
+  background-color: white;
+  opacity: 80%;
+  min-height: 100vh;
+}
+
+.task-area{
+  border: 1px solid lightgrey;
+}
+
+.status{
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  position: relative;
+}
+
+.status div{
+  padding: 1em;
+}
+
+#underline{
+  height: 4px;
+  background-color: #b7caa3;
+  position: absolute;
+  width: 80px;
+  left: 0px;
+  top: 52px;
+  padding: 0;
+}
+
+.tasks{
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
