@@ -14,18 +14,30 @@
   </head>
   <body>
     <div class="container">
-      <h1>To Do List</h1>
-      <form class="input-area">
-        <input type="text" id="task-input" placeholder="오늘의 할 일은?" />
-        <button type="submit" id="add-button">+</button>
-      </form>
+      <div class="head">
+        <h1>Today's Todo List</h1>
+      </div>
+      <div class="head-menu">
+        <form class="input-area">
+          <input type="text" id="task-input" placeholder="오늘의 할 일은?" />
+          <button type="submit" id="add-button">
+            <i
+              class="fa-solid fa-square-plus fa-2xl"
+              style="color: #98ac8f"
+            ></i>
+          </button>
+        </form>
+        <button id="delete-all">모두 삭제</button>
+      </div>
+
       <section class="task-area">
         <div class="status">
           <div id="underline"></div>
-          <div>모두</div>
-          <div>진행중</div>
-          <div>끝남</div>
+          <div id="all">모두</div>
+          <div id="ongoing">진행중</div>
+          <div id="done">끝남</div>
         </div>
+
         <div id="list-area"></div>
       </section>
     </div>

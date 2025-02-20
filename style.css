@@ -1,4 +1,25 @@
+@font-face {
+  font-family: 'netmarbleL';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleL.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'netmarbleM';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'netmarbleB';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.1/netmarbleB.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body{
+  font-family: 'netmarbleL';
+  font-weight: 300;
   margin: 0;
   background-image: url(./background/simple-theme.jpg);
   background-repeat: no-repeat;
@@ -11,28 +32,76 @@ body{
   min-height: 100vh;
 }
 
+.head{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-family: 'netmarbleB';
+  padding: 1em;
+  font-weight: bold;
+}
+
+.head-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-area{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#task-input{
+  width: 250px;
+}
+
+#add-button {
+  background: none; 
+  border: none; 
+  cursor: pointer;
+}
+
+#delete-all{
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  background-color: #98ac8f;
+  color: white;
+  padding: 6px;
+
+}
+
 .task-area{
   border: 1px solid lightgrey;
 }
 
 .status{
+  font-family: 'netmarbleM';
   display: flex;
+  gap: 0 2em;
   border-bottom: 1px solid lightgrey;
   position: relative;
 }
 
 .status div{
   padding: 1em;
+  cursor: pointer;
 }
 
 #underline{
   height: 4px;
-  background-color: #b7caa3;
+  background-color: #98ac8f;
   position: absolute;
-  width: 70px;
+  width: 75px;
   left: 0px;
   top: 52px;
   padding: 0;
+  transition: 0.5s;
+  border-radius: 5px;
 }
 
 .tasks{
